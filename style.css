@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #885985;
+    color: #e1dce1;  
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    flex: 1;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+header {
+    position: relative;
+    top: 80px;
+    background-image: url("./images/landing.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: row;
+    background-repeat:round;
+}
+
+header h1 {
+    color: #e1dce1;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+    padding: 60px;
+    margin: 50px;   
+    flex: 3;
+}
+.buttonSection {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header button {
+    margin: 50px;
+    height: 40px;
+    background-color:#95a8b6;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
