@@ -1,21 +1,23 @@
-* {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     background-color: #885985;
     color: #e1dce1;  
-    position: fixed;
     width: 100%;
-    z-index: 10;
+    flex: 0 0 auto; /* This line keeps the navbar at a fixed height */
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
 nav ul li {
@@ -24,41 +26,56 @@ nav ul li {
     align-items: center;
     justify-content: center;
     margin: 30px;
-    font-family:"Times New Roman", Times, serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 30px;
+    transition-duration: 0.5s;
 }
 
-header {
+nav ul li:hover {
+    background-color: #e1dce1;
+    color: #885985;
+    transition-duration: 0.5s;
+}
+
+.logoSpace {
+    flex: 2;
+    font-size: 40px;
+}
+
+main {
+    flex: 1;
     position: relative;
-    top: 80px;
     background-image: url("./images/landing.jpg");
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: row;
-    background-repeat:round;
+    align-items: center; /* This centers the items horizontally */
+    justify-content: center; /* This centers the items vertically */
 }
 
-header h1 {
+
+main h1 {
     color: #e1dce1;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 90px;
-    padding: 60px;
-    margin: 83px;   
-    flex: 3;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center; /* This centers the text */
 }
+
 .buttonSection {
     flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 header button {
     margin: 50px;
     height: 40px;
     background-color:#95a8b6;
     border-radius: 10px;
     border: none;
-    font-family: "Times New Roman", Times, serif;
-
+    font-family:'Times New Roman', Times, serif;
 }
