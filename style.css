@@ -20,18 +20,33 @@ nav ul {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    color: #e1dce1;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 20px 50px;
+    margin: 0px;
+    transition-duration: 0.5s;
+}
+
 nav ul li {
+    /* Center elements in the middle of their sections*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     flex: 1;
     list-style: none;
     align-items: center;
     justify-content: center;
-    margin: 30px;
+    padding: 10px;
     font-family:'Times New Roman', Times, serif;
     font-size: 30px;
     transition-duration: 0.5s;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     background-color: #e1dce1;
     color: #885985;
     transition-duration: 0.5s;
@@ -40,6 +55,9 @@ nav ul li:hover {
 .logoSpace {
     flex: 2;
     font-size: 40px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
 }
 
 main {
@@ -51,31 +69,38 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center; /* This centers the items horizontally */
     justify-content: center; /* This centers the items vertically */
 }
 
 
+
 main h1 {
     color: #e1dce1;
     font-family:'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center; /* This centers the text */
 }
 
-.buttonSection {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.joinButton {
+    background-color: #885985;
+    color: #e1dce1;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin: 10px;
+    transition-duration: 0.5s;
 }
 
-header button {
-    margin: 50px;
-    height: 40px;
-    background-color:#95a8b6;
-    border-radius: 10px;
-    border: none;
-    font-family:'Times New Roman', Times, serif;
+.joinButton:hover {
+    background-color: #e1dce1;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    color: #885985;
+    transition-duration: 0.5s;
 }
