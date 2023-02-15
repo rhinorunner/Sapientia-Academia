@@ -13,6 +13,14 @@ nav {
     flex: 0 0 auto; /* This line keeps the navbar at a fixed height */
 }
 
+.logoSpace {
+    flex: 2;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -50,6 +58,7 @@ nav ul li a:hover {
     background-color: #e1dce1;
     color: #885985;
     transition-duration: 0.5s;
+    border-radius: 30px;
 }
 
 .logoSpace {
@@ -83,24 +92,36 @@ main h1 {
     text-align: center; /* This centers the text */
 }
 
+p {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: #e1dce1;
+    text-align: center;
+}
+
 .joinButton {
     background-color: #885985;
     color: #e1dce1;
     font-family:'Times New Roman', Times, serif;
     font-size: 30px;
     border: none;
-    border-radius: 10px;
-    padding: 10px 50px;
+    padding: 20px 100px;
     margin: 10px;
+    border-radius: 10px;
     transition-duration: 0.5s;
 }
 
 .joinButton:hover {
     background-color: #e1dce1;
     transition-duration: 0.5s;
+    border-radius: 30px;
+    color: #885985;
 }
 
-a:hover {
+
+
+li a:hover {
     color: #885985;
     transition-duration: 0.5s;
 }
