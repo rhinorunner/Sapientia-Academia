@@ -22,17 +22,20 @@
       </nav>
         <form class="login-form">
             <div class="input">
-              <label for="username-email-input">Username or Email:</label>
-              <input type="text" id="username-email-input" name="usernameOrEmail" required>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
             </div>
-            <div>
+            <div class="input">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" required>
+            <div class="input">
               <label for="password-input">Password:</label>
-              <input type="password" id="password-input" name="password" required>
+              <input type="password" id="password" name="password" required>
             </div>
             <div id="error-container"></div>
             <div class="buttons">
-              <button class="submit">Login</button>
-              <a class="joinButton" href="signUp.html">Sign Up</a>
+              <button class="submit">Sign Up</button>
+              <a class="joinButton" href="login.html">Login</a>
             </div>
           </form>
           
