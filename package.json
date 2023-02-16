@@ -1,0 +1,20 @@
+{
+  "name": "sapientia-academia",
+  "version": "1.0.0",
+  "description": "A philosophy forum",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/W-Zach/Sapientia-Academia.git"
+  },
+  "author": "Zachary Wray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/W-Zach/Sapientia-Academia/issues"
+  },
+  "homepage": "https://github.com/W-Zach/Sapientia-Academia#readme"
+}
